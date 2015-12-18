@@ -31,45 +31,37 @@ body {
   width: 500px;
   border-radius: 500px;
   border: 5px solid #fff;
-  -webkit-animation: neonbox1 1.5s ease-in-out infinite alternate;
   animation: neonbox1 1.5s ease-in-out infinite alternate;
   position: relative;
 }
 
 img {
   position: absolute;
+  display: block;
   top: 230px;
   width: 250px;
   left: 30px;
-  -webkit-animation: neonlip1 1.5s ease-in-out infinite alternate;
-  animation: neonlip1 1.5s ease-in-out infinite alternate;
+  animation: neonlip 1.5s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes neonlip1 {
+@keyframes neonlip {
   from {
+    filter: drop-shadow(0 0 1px #fff)
+          drop-shadow(0 0 3px #fff)
+          drop-shadow(0 0 5px #f00)
+          drop-shadow(0 0 8px rgba(240, 0, 0, 0.5));
     -webkit-filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 5px #f00)
           drop-shadow(0 0 8px rgba(240, 0, 0, 0.5));
   }
   to {
-    -webkit-filter: drop-shadow(0 0 1px #fff)
+    filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 2px #f00)
           drop-shadow(0 0 10px #f00)
           drop-shadow(0 0 18px rgba(240, 0, 0, 0.7));
-  }
-}
-
-@keyframes neonlip1 {
-  from {
-    filter: drop-shadow(0 0 1px #fff)
-          drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 5px #f00)
-          drop-shadow(0 0 8px rgba(240, 0, 0, 0.5));
-  }
-  to {
-    filter: drop-shadow(0 0 1px #fff)
+    -webkit-filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 2px #f00)
           drop-shadow(0 0 10px #f00)
@@ -83,24 +75,10 @@ p {
   font-size: 7rem;
   color: #fff;
   font-family: LasEnter;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
   text-align: center;
   margin: 50px 0;
   white-space: nowrap;
-}
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow:  0 0 5px #FFF,
-                  0 0 10px #F00,
-                  0 0 25px #F00;
-  }
-  to {
-    text-shadow:  0 0 2px #FFF,
-                  0 0 50px #F00,
-                  0 0 65px #F00;
-  }
 }
 
 @keyframes neon1 {
