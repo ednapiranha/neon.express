@@ -55,9 +55,9 @@ p {
                   0 0 25px #F00;
   }
   to {
-    text-shadow:  0 0 5px #FFF,
-                  0 0 20px #F00,
-                  0 0 35px #F00;
+    text-shadow:  0 0 2px #FFF,
+                  0 0 50px #F00,
+                  0 0 65px #F00;
   }
 }
 
@@ -68,9 +68,9 @@ p {
                   0 0 25px #F00;
   }
   to {
-    text-shadow:  0 0 5px #FFF,
-                  0 0 20px #F00,
-                  0 0 35px #F00;
+    text-shadow:  0 0 2px #FFF,
+                  0 0 50px #F00,
+                  0 0 65px #F00;
   }
 }
 
@@ -84,12 +84,12 @@ p {
               inset 0 0 15px #F00;
   }
   to {
-    box-shadow: 0 0 5px #FFF,
-              0 0 20px #F00,
-              0 0 35px #F00,
-              inset 0 0 5px #FFF,
-              inset 0 0 20px #F00,
-              inset 0 0 25px #F00;
+    box-shadow: 0 0 2px #FFF,
+              0 0 40px #F00,
+              0 0 55px #F00,
+              inset 0 0 2px #FFF,
+              inset 0 0 40px #F00,
+              inset 0 0 55px #F00;
   }
 }
 
@@ -103,11 +103,11 @@ p {
               inset 0 0 15px #F00;
   }
   to {
-    box-shadow: 0 0 5px #FFF,
-              0 0 20px #F00,
-              0 0 35px #F00,
-              inset 0 0 5px #FFF,
-              inset 0 0 20px #F00,
-              inset 0 0 25px #F00;
+    box-shadow: 0 0 2px #FFF,
+              0 0 40px #F00,
+              0 0 55px #F00,
+              inset 0 0 2px #FFF,
+              inset 0 0 40px #F00,
+              inset 0 0 55px #F00;
   }
 }
