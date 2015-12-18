@@ -1,0 +1,109 @@
+/*setup*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Airstream';
+  font-style: normal;
+  font-weight: 400;
+  src: url(LasEnter.ttf) format('truetype');
+}
+
+body {
+  background-color: #45e6b3;
+  background:   linear-gradient(to bottom,
+                #e645cd 0%,
+                #c73eb2 20%,
+                #883ec7 61%,
+                #3e4ec7 100%);
+}
+
+#container {
+  margin: 20px;
+  height: 500px;
+  width: 500px;
+  border-radius: 500px;
+  border: 5px solid #fff;
+  -webkit-animation: neonbox1 1.5s ease-in-out infinite alternate;
+  animation: neonbox1 1.5s ease-in-out infinite alternate;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  top: 120px;
+  font-size: 7rem;
+  color: #fff;
+  font-family: Airstream;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  text-align: center;
+  margin: 50px 0;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow:  0 0 5px #FFF,
+                  0 0 10px #F00,
+                  0 0 25px #F00;
+  }
+  to {
+    text-shadow:  0 0 5px #FFF,
+                  0 0 20px #F00,
+                  0 0 35px #F00;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow:  0 0 5px #FFF,
+                  0 0 10px #F00,
+                  0 0 25px #F00;
+  }
+  to {
+    text-shadow:  0 0 5px #FFF,
+                  0 0 20px #F00,
+                  0 0 35px #F00;
+  }
+}
+
+@-webkit-keyframes neonbox1 {
+  from {
+    box-shadow: 0 0 5px #FFF,
+              0 0 10px #F00,
+              0 0 15px #F00,
+              inset 0 0 5px #FFF,
+              inset 0 0 10px #F00,
+              inset 0 0 15px #F00;
+  }
+  to {
+    box-shadow: 0 0 5px #FFF,
+              0 0 20px #F00,
+              0 0 35px #F00,
+              inset 0 0 5px #FFF,
+              inset 0 0 20px #F00,
+              inset 0 0 25px #F00;
+  }
+}
+
+@keyframes neonbox1 {
+  from {
+    box-shadow: 0 0 5px #FFF,
+              0 0 10px #F00,
+              0 0 15px #F00,
+              inset 0 0 5px #FFF,
+              inset 0 0 10px #F00,
+              inset 0 0 15px #F00;
+  }
+  to {
+    box-shadow: 0 0 5px #FFF,
+              0 0 20px #F00,
+              0 0 35px #F00,
+              inset 0 0 5px #FFF,
+              inset 0 0 20px #F00,
+              inset 0 0 25px #F00;
+  }
+}
