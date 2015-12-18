@@ -10,7 +10,7 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Airstream';
+  font-family: 'LasEnter';
   font-style: normal;
   font-weight: 400;
   src: url(LasEnter.ttf) format('truetype');
@@ -82,7 +82,7 @@ p {
   top: 120px;
   font-size: 7rem;
   color: #fff;
-  font-family: Airstream;
+  font-family: LasEnter;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
   text-align: center;
