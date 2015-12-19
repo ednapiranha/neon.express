@@ -38,34 +38,35 @@ body {
 img {
   position: absolute;
   display: block;
-  top: 230px;
-  width: 250px;
+  top: 10px;
+  width: 230px;
   left: 30px;
-  animation: neonlip 1.5s ease-in-out infinite alternate;
+  animation: neontree 1.5s ease-in-out infinite alternate;
+  z-index: 1;
 }
 
-@keyframes neonlip {
+@keyframes neontree {
   from {
     filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 5px #f00)
-          drop-shadow(0 0 8px rgba(240, 0, 0, 0.5));
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
     -webkit-filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 5px #f00)
-          drop-shadow(0 0 8px rgba(240, 0, 0, 0.5));
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
   }
   to {
     filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 2px #f00)
-          drop-shadow(0 0 10px #f00)
-          drop-shadow(0 0 18px rgba(240, 0, 0, 0.7));
+          drop-shadow(0 0 2px #00fda1)
+          drop-shadow(0 0 10px #00fda1)
+          drop-shadow(0 0 18px rgba(0, 253, 161, 0.7));
     -webkit-filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 2px #f00)
-          drop-shadow(0 0 10px #f00)
-          drop-shadow(0 0 18px rgba(240, 0, 0, 0.7));
+          drop-shadow(0 0 2px #00fda1)
+          drop-shadow(0 0 10px #00fda1)
+          drop-shadow(0 0 18px rgba(0, 253, 161, 0.7));
   }
 }
 
@@ -79,6 +80,7 @@ p {
   text-align: center;
   margin: 50px 0;
   white-space: nowrap;
+  z-index: 2;
 }
 
 @keyframes neon1 {
@@ -91,25 +93,6 @@ p {
     text-shadow:  0 0 2px #FFF,
                   0 0 50px #F00,
                   0 0 65px #F00;
-  }
-}
-
-@-webkit-keyframes neonbox1 {
-  from {
-    box-shadow: 0 0 5px #FFF,
-              0 0 10px #F00,
-              0 0 15px #F00,
-              inset 0 0 5px #FFF,
-              inset 0 0 10px #F00,
-              inset 0 0 15px #F00;
-  }
-  to {
-    box-shadow: 0 0 2px #FFF,
-              0 0 40px #F00,
-              0 0 55px #F00,
-              inset 0 0 2px #FFF,
-              inset 0 0 40px #F00,
-              inset 0 0 55px #F00;
   }
 }
 
