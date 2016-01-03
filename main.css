@@ -64,26 +64,61 @@ body {
   background-attachment: fixed;
 }
 
-.info p {
-  width: 150px;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-top: 10px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.info-block {
+section {
   padding: 20px;
-  width: 100%;
   max-width: 500px;
   margin-top: 20px;
+  float: left;
+  font-size: 2.5rem;
 }
 
-.info-block h1 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+section a, section h2 {
+  text-shadow:  0 0 1px #fff,
+                0 0 5px #fff,
+                0 0 6px #0098ff,
+                0 0 12px #0098ff,
+                0 0 18px #0098ff,
+                0 0 35px #0098ff;
+}
+
+section a {
+  margin-top: 5px;
   color: #fff;
-  animation: neontext 4s infinite;
+  opacity: 0.3;
+}
+
+section a:hover {
+  opacity: 1.0;
+  text-shadow:  0 0 1px #fff,
+                0 0 5px #fff,
+                0 0 8px #0098ff,
+                0 0 11px #0098ff,
+                0 0 22px #0098ff,
+                0 0 48px #0098ff,
+                0 0 55px #0098ff;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+h1, h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #fff;
   font-weight: 800;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-shadow:  0 0 1px #fff,
+                0 0 5px #fff,
+                0 0 6px #ff008a,
+                0 0 12px #ff008a,
+                0 0 18px #ff008a,
+                0 0 35px #ff008a;
+}
+
+h1 {
+  animation: neontext 4s infinite;
 }
 
 @keyframes neontext {
@@ -143,17 +178,17 @@ body {
 
 .palmtree {
   margin-top: 20px;
-  width: 400px;
+  width: 374px;
   filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
+          drop-shadow(0 0 7px #00fda1)
+          drop-shadow(0 0 15px rgba(0, 253, 161, 0.5));
   -webkit-filter: drop-shadow(0 0 1px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
+          drop-shadow(0 0 7px #00fda1)
+          drop-shadow(0 0 15px rgba(0, 253, 161, 0.5));
 }
 
 .flamingo {
