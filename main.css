@@ -1,116 +1,175 @@
-* {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-html, body {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @font-face {
-  font-family: 'LasEnter';
+  font-family: 'Neon';
+  src: url('neon.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url(LasEnter.ttf) format('truetype');
 }
 
 body {
-  background-color: #3ec7b8;
-  background:   linear-gradient(to bottom,
-                #e645cd 0%,
-                #c73eb2 20%,
-                #883ec7 61%,
-                #3ec7b8 100%);
+  font-family: 'Neon', sans-serif;
+  background: linear-gradient(to bottom,
+              #111 0%,
+              #333 10%,
+              #00a794 61%,
+              #ff007d 100%);
+  background-attachment: fixed;
 }
 
-#container {
-  margin: 20px;
-  height: 500px;
-  width: 500px;
-  border-radius: 500px;
-  border: 5px solid #fff;
-  animation: neonbox1 1.5s ease-in-out infinite alternate;
-  position: relative;
+.info p {
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-img {
-  position: absolute;
-  display: block;
-  top: 10px;
-  width: 230px;
-  left: 30px;
-  animation: neontree 1.5s ease-in-out infinite alternate;
-  z-index: 1;
+.info-block {
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
 }
 
-@keyframes neontree {
-  from {
-    filter: drop-shadow(0 0 1px #fff)
-          drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
-    -webkit-filter: drop-shadow(0 0 1px #fff)
-          drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 5px #00fda1)
-          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
-  }
-  to {
-    filter: drop-shadow(0 0 1px #fff)
-          drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 2px #00fda1)
-          drop-shadow(0 0 10px #00fda1)
-          drop-shadow(0 0 18px rgba(0, 253, 161, 0.7));
-    -webkit-filter: drop-shadow(0 0 1px #fff)
-          drop-shadow(0 0 3px #fff)
-          drop-shadow(0 0 2px #00fda1)
-          drop-shadow(0 0 10px #00fda1)
-          drop-shadow(0 0 18px rgba(0, 253, 161, 0.7));
-  }
-}
-
-p {
-  position: absolute;
-  top: 120px;
-  font-size: 7rem;
+.info-block h1 {
+  font-size: 3rem;
+  line-height: 3.3rem;
   color: #fff;
-  font-family: LasEnter;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-  text-align: center;
-  margin: 50px 0;
-  white-space: nowrap;
-  z-index: 2;
+  animation: neontext 4s infinite;
+  font-weight: 800;
 }
 
-@keyframes neon1 {
-  from {
-    text-shadow:  0 0 5px #FFF,
-                  0 0 10px #F00,
-                  0 0 25px #F00;
+@keyframes neontext {
+  0% {
+    text-shadow:  0 0 1px #fff,
+                  0 0 5px #fff,
+                  0 0 6px #ff008a,
+                  0 0 12px #ff008a,
+                  0 0 18px #ff008a,
+                  0 0 35px #ff008a;
   }
-  to {
-    text-shadow:  0 0 2px #FFF,
-                  0 0 50px #F00,
-                  0 0 65px #F00;
+  79% {
+    color: #fff;
+    text-shadow:  0 0 1px #fff,
+                  0 0 5px #fff,
+                  0 0 6px #ff008a,
+                  0 0 12px #ff008a,
+                  0 0 18px #ff008a,
+                  0 0 35px #ff008a;
+  }
+  80% {
+    color: #ff97dd;
+    text-shadow:  0 0 1px #fff,
+                  0 0 10px #ff008a;
+  }
+  81% {
+    color: #fff;
+    text-shadow:  0 0 1px #fff,
+                  0 0 3px #fff,
+                  0 0 6px #ff008a,
+                  0 0 12px #ff008a,
+                  0 0 18px #ff008a,
+                  0 0 35px #ff008a;
+  }
+  83% {
+    color: #ff97dd;
+    text-shadow:  0 0 1px #fff,
+                  0 0 10px #ff008a;
+  }
+  84% {
+    color: #fff;
+    text-shadow:  0 0 1px #fff,
+                  0 0 3px #fff,
+                  0 0 6px #ff008a,
+                  0 0 10px #ff008a,
+                  0 0 15px #ff008a;
+  }
+  100% {
+    text-shadow:  0 0 1px #fff,
+                  0 0 5px #fff,
+                  0 0 6px #ff008a,
+                  0 0 12px #ff008a,
+                  0 0 18px #ff008a,
+                  0 0 35px #ff008a;
   }
 }
 
-@keyframes neonbox1 {
-  from {
-    box-shadow: 0 0 5px #FFF,
-              0 0 10px #F00,
-              0 0 15px #F00,
-              inset 0 0 5px #FFF,
-              inset 0 0 10px #F00,
-              inset 0 0 15px #F00;
-  }
-  to {
-    box-shadow: 0 0 2px #FFF,
-              0 0 40px #F00,
-              0 0 55px #F00,
-              inset 0 0 2px #FFF,
-              inset 0 0 40px #F00,
-              inset 0 0 55px #F00;
-  }
+.palmtree {
+  margin-top: 20px;
+  width: 400px;
+  filter: drop-shadow(0 0 1px #fff)
+          drop-shadow(0 0 3px #fff)
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
+  -webkit-filter: drop-shadow(0 0 1px #fff)
+          drop-shadow(0 0 3px #fff)
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 5px #00fda1)
+          drop-shadow(0 0 8px rgba(0, 253, 161, 0.5));
+}
+
+.flamingo {
+  width: 200px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  filter: drop-shadow(0 0 2px #fff)
+          drop-shadow(0 0 3px #fff)
+          drop-shadow(0 0 5px #fd15be)
+          drop-shadow(0 0 10px #fd15be)
+          drop-shadow(0 0 18px rgba(253, 21, 190, 0.5));
+  -webkit-filter: drop-shadow(0 0 2px #fff)
+          drop-shadow(0 0 3px #fff)
+          drop-shadow(0 0 5px #fd15be)
+          drop-shadow(0 0 10px #fd15be)
+          drop-shadow(0 0 18px rgba(253, 21, 190, 0.5));
 }
