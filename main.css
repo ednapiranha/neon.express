@@ -208,3 +208,22 @@ h1 {
           drop-shadow(0 0 10px #fd15be)
           drop-shadow(0 0 18px rgba(253, 21, 190, 0.5));
 }
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+  }
+
+  section {
+    padding: 10px 20px;
+  }
+
+  .palmtree {
+    width: 245px;
+  }
+
+  .flamingo {
+    width: 100px;
+  }
+}
