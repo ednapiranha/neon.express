@@ -183,12 +183,12 @@ h1 {
 .palmtree {
   margin-top: 20px;
   width: 374px;
-  filter: drop-shadow(0 0 1px #fff)
+  filter: drop-shadow(0 0 2px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 5px #00fda1)
           drop-shadow(0 0 7px #00fda1)
           drop-shadow(0 0 15px rgba(0, 253, 161, 0.5));
-  -webkit-filter: drop-shadow(0 0 1px #fff)
+  -webkit-filter: drop-shadow(0 0 2px #fff)
           drop-shadow(0 0 3px #fff)
           drop-shadow(0 0 5px #00fda1)
           drop-shadow(0 0 7px #00fda1)
