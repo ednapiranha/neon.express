@@ -86,6 +86,7 @@ section a, section h2 {
 }
 
 section a {
+  display: block;
   margin-top: 5px;
   color: #fff;
   opacity: 0.3;
